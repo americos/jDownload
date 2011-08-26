@@ -62,7 +62,7 @@
 	// This function checks for the file, checks to see if can be opened and then forces the file to the browser
 	function get_file($file_path){
 				
-		global $mime_type, $ext;		
+		global $mime_types, $ext;		
 				
 		// Check if mimetypes exists in our list
 		$content_type = array_key_exists($ext, $mime_types) ? $mime_types[$ext] : "application/force-download";
